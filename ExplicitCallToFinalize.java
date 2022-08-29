@@ -12,7 +12,7 @@ public class ExplicitCallToFinalize {
         // EMB-ISSUE: CodeIssueNames.EXPLICIT_CALL_TO_FINALIZE/no-detect
         object1.methodCall();
 
-
+	System.out.println("Hello");
 
     }
 }
