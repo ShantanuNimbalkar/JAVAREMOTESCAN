@@ -15,5 +15,6 @@ public class AvoidUsingPredictable {
     
     public void print(){
     System.out.println("hello");
+    System.out.println("Bye Bye");
     }
 }
