@@ -94,7 +94,7 @@ public class ReturnInFinallyBlock {
         {
             if(true)
             {
-                System.out.println("Hi");
+                //System.out.println("Hi");
                 return;
 
             }
