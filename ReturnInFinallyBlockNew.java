@@ -91,12 +91,12 @@ public class ReturnInFinallyBlockNew {
         }
         finally
         {
-            //if(true)
-            //{
+            if(true)
+            {
                 System.out.println("Hi");
                 return;
 
-            //}
+            }
         }
 
     }
