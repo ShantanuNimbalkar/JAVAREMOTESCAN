@@ -93,7 +93,7 @@ public class ReturnInFinallyBlockNew {
         {
             if(true)
             {
-                //System.out.println("Hi");
+                System.out.println("Hi");
                 return;
 
             }
