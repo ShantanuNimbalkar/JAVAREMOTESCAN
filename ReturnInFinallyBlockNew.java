@@ -37,7 +37,7 @@ public class ReturnInFinallyBlockNew {
         finally
         {
                 return hello;
-            System.out.println("Hello");
+            //System.out.println("Hello");
         }
     }
 
