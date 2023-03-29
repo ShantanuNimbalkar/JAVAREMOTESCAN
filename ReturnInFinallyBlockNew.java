@@ -91,6 +91,8 @@ public class ReturnInFinallyBlockNew {
         }
         finally
         {
+            
+            
             if(true)
             {
                 //System.out.println("Hi");
