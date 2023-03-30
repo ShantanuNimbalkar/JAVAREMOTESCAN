@@ -45,6 +45,10 @@ public class ComparisionOfObjectReferencesInsteadOfObjectContents {
 		// EMB-ISSUE: CodeIssueNames.COMPARISION_OF_OBJECT_REFRENCE_INSTEAD_OF_OBJECT_CONTENTS/no-detect
 		if (str1.equals(str2)) {
 			logger.info("str1 equals str2");
+			System.out.println("Str1");
+			System.out.println("Str1");
+			System.out.println("Str1");
+			System.out.println("Str1");
 		}
 	}
 
