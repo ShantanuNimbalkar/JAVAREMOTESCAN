@@ -48,7 +48,8 @@ public class ComparisionOfObjectReferencesInsteadOfObjectContents {
 			System.out.println("Str1");
 			System.out.println("Str1");
 			System.out.println("Str1");
-			System.out.println("Str1");
+			System.out.println("Str2");
+// 			System.out.println("Str1");
 		}
 	}
 
