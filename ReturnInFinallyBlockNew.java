@@ -17,7 +17,7 @@ public class ReturnInFinallyBlockNew {
         {
             if(true)
             {
-                return;
+               // return;
                 System.out.println("Hi");
             }
         }
