@@ -4,6 +4,7 @@ public class ReturnInFinallyBlockNew {
     public void bad() throws Throwable
     {
         // EMB-ISSUE: CodeIssueNames.RETURN_IN_FINALLY_BLOCK
+       
         try
         {
             throw new IllegalArgumentException();
