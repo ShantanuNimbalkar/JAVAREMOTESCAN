@@ -12,5 +12,6 @@ public class AvoidUsingPredictable {
 
         // EMB-ISSUE: CodeIssueNames.AVOID_USING_PREDICTABLE_RANDOM_VALUES/no-detect
         SecureRandom secureRandom = new SecureRandom();
+          SecureRandom secureRandom3 = new SecureRandom();
     }
 }
