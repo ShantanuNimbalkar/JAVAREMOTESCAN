@@ -16,9 +16,11 @@ public class Demo {
         {
             if(true)
             {
+                
+                System.out.println("Hi");
+                System.out.println("Hi");
+                System.out.println("Hi");
                 return;
-                System.out.println("Hi");
-                System.out.println("Hi");
             }
         }
 
