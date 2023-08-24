@@ -1,6 +1,6 @@
 {
     "gammaAccess": {
-        "url": "http://18.185.131.244:3001/",
+        "url": "http://18.185.131.244:3001",
         "token": "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTY4Nzg0ODc2MjQ0OCwiaWF0IjoxNjg3ODQ4NzYyfQ.lXbnGJD9nTtvg7IUkWBdIFN8lYjbTAaOqeSTByBMavFesa_fNeK6JOFia_MzeXVEXLWvwW3eBw3428LS8QG2og"
     },
     "repositories": [
