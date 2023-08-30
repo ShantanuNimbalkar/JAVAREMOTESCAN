@@ -1,13 +1,13 @@
 {
     "gammaAccess": {
-        "url": "http://localhost:3000/",
-        "token": "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTY5MzI4NTczMzEzMSwiaWF0IjoxNjkzMjg1NzMzfQ.dY8EiV-5GmJS7iQNocRVwQnGxwr12uPbTV2vY6kE2ZRUPWBbSoWNG5Rg7ItkEHm4LuB1yRpLq6YXc1tTf3-Ywg"
+        "url": "https://886a-3-122-53-161.ngrok.io",
+        "token": "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTY5MzM5MTk3NDUxNiwiaWF0IjoxNjkzMzkxOTc0fQ.0I5ccMCSk0kGELeRMmh0lw6t_p3a34k-GB0K-fkbWRN4eWlCI1_4QpgTvXbrXTAhKHVLaVhiPGD8IhVjpuTUVQ"
     },
     "repositories": [
         {
             "dataDir": "$WORKSPACE/temptk8",
             "repository": {
-                "uid": "925d9de3f1407671d726f3777296439e",
+                "uid": "fd5e7fd9d70f4c73977a551a29b62f8c",
                 "projectName": "jenkins",
                 "languages": [
                     "JAVA"
