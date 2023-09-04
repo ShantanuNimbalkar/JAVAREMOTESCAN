@@ -7,7 +7,7 @@
         {
             "dataDir": "$WORKSPACE/temptk8",
             "repository": {
-                "uid": "fd5e7fd9d70f4c73977a551a29b62f8c",
+                "uid": "d944425f9d1df0ef0fb45e829d700d1f",
                 "projectName": "Java",
                 "languages": [
                     "JAVA"
