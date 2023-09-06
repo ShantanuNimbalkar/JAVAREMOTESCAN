@@ -1,13 +1,13 @@
 {
     "gammaAccess": {
-        "url": "http://localhost:3009",
-        "token": "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTY5MzkwNzQ1MTU5MCwiaWF0IjoxNjkzOTA3NDUxfQ.8SDFA8TubXXUwJXdxcIzbcpBVXZHDhV0T6d__2q3wfTlZB3dzYmt3ldodxIoS5M20Q2wPp95-l22AcsNt1UehA"
+        "url": "https://5cfd-18-194-87-41.ngrok.io",
+        "token": "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTY5Mzk5NTU5ODk4MywiaWF0IjoxNjkzOTk1NTk4fQ.jduZoX4fmHx17qaxSV2pNHLYjqOj6y7ODymXmEi-UPkW-rN5KLYm8-Zn0h52oLFamGxGG_dpZum-79bGXDQ0Hg"
     },
     "repositories": [
         {
             "dataDir": "$WORKSPACE/temptk8",
             "repository": {
-                "uid": "d944425f9d1df0ef0fb45e829d700d1f",
+                "uid": "d03c21843c188940c9e51e678f34a1f4",
                 "projectName": "Java",
                 "languages": [
                     "JAVA"
