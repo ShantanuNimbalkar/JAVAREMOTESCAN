@@ -1,7 +1,7 @@
 {
     "gammaAccess": {
-        "url": "http://localhost:3009",
-        "token": "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTY5NDAwNjkyNDE2NCwiaWF0IjoxNjk0MDA2OTI0fQ.JT3MYlTCi4anwybUO_Fvpfg2db4NTaEKt74X8q6ct16hyesaOIGsSBF5X_PR5rLGl_5qRbDRkeIW_ghCSFh4eQ"
+        "url": "http://localhost:3001",
+        "token": "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTY5NDA4OTcxMTc2NCwiaWF0IjoxNjk0MDg5NzExfQ.TeL-VpDlhY1qyAux3p_ZzKcnWGGcOusmqP0ZNB6vwtimI5v0cyJj1Qeb65HG9RQgL1dPm7MBm319vpTyZ6cPdw"
     },
     "repositories": [
         {
