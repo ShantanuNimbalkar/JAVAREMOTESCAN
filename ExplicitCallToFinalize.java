@@ -35,5 +35,6 @@ public class ExplicitCallToFinalize {
 	    System.out.println("Hello");
 	    System.out.println("Hello");
 	    System.out.println("Hello");
+	    System.out.println("Hello");
     }
 }
