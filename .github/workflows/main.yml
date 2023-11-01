@@ -17,3 +17,15 @@ jobs:
         run: |
           curl https://v1.embold.io/nfs/embold_1.9.17.0/CLI/embold-scanner-1.2.0-archive.tar.gz -o embold-scanner-1.2.0-archive.tar.gz
           mkdir -p ./embold-scanner && tar xvf embold-scanner-1.2.0-archive.tar.gz -C ./embold-scanner
+
+      - name: Run Embold Scan
+        run: |
+          ./embold-scanner/bin/embold-scanner analyse \
+            -u https://a9b7-54-93-64-58.ngrok.io \
+            -t eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTY5ODg0MDYwMTg0MSwiaWF0IjoxNjk4ODQwNjAxfQ.FEipAG1_Snfxe5jnkqf6SzJ3sM_Dm58rvniL2cJPZuikOiWrhybDGQrJx13P5LUGnRLt2NQious7NLP-lTkBWg \
+            -r 0063ff6c94ee04371ad3b84ceac6ef53 \
+            -b $PWD \
+            -d $PWD/embold-data \
+            -c ./repository-configuration.json \
+            -l ./embold-log \
+            -sh ./embold-scanner-home
