@@ -1,0 +1,19 @@
+name: Embold Scan on Branch Push
+
+on:
+  push:
+    branches:
+      - '*'
+
+jobs:
+  embold-scan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Download and un-tar Embold Scanner
+        run: |
+          curl https://v1.embold.io/nfs/embold_1.9.17.0/CLI/embold-scanner-1.2.0-archive.tar.gz -o embold-scanner-1.2.0-archive.tar.gz
+          mkdir -p ./embold-scanner && tar xvf embold-scanner-1.2.0-archive.tar.gz -C ./embold-scanner
