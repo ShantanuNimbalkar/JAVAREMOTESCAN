@@ -28,8 +28,7 @@ jobs:
             -d $PWD/embold-data \
             -c ./repository-configuration.json \
             -l ./embold-log \
-            -sh ./embold-scanner-home \
-            -v
+            -sh ./embold-scanner-home 
 
       - name: Check Embold Quality Gate
         run: |
