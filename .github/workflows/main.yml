@@ -22,8 +22,8 @@ jobs:
         run: |
           ./embold-scanner/bin/embold-scanner analyse \
             -u https://ng.emboldci.dev \
-            -t eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTY5ODkxMjY2MjYyOSwiaWF0IjoxNjk4OTEyNjYyfQ.6VfL5l5DhsRFyBJiVyJvnBmPh60W50Oti-AL6OubD1MMg3sOJSDqEpsz3DLmI68AIHHAbIgK7LePc52e-VbgJg \
-            -r d46fc849e68e557b2e2c557126f04a81 \
+            -t ${{ secrets.EMBOLD_TOKEN }} \
+            -r ${{ secrets.REPO_UID }} \
             -b $PWD \
             -d $PWD/embold-data \
             -c ./repository-configuration.json \
@@ -36,7 +36,7 @@ jobs:
           GREEN='\033[0;32m'
           NC='\033[0m' # No Color
 
-          response=$(curl --silent --location --request GET "https://ng.emboldci.dev/api/v1/repositories/d46fc849e68e557b2e2c557126f04a81/qualitygateprofiles/status" --header "Authorization:Bearer eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTY5ODkxMjY2MjYyOSwiaWF0IjoxNjk4OTEyNjYyfQ.6VfL5l5DhsRFyBJiVyJvnBmPh60W50Oti-AL6OubD1MMg3sOJSDqEpsz3DLmI68AIHHAbIgK7LePc52e-VbgJg")
+          response=$(curl --silent --location --request GET "https://ng.emboldci.dev/api/v1/repositories/${{ secrets.REPO_UID }}/qualitygateprofiles/status" --header "Authorization:Bearer eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTY5ODkxMjY2MjYyOSwiaWF0IjoxNjk4OTEyNjYyfQ.6VfL5l5DhsRFyBJiVyJvnBmPh60W50Oti-AL6OubD1MMg3sOJSDqEpsz3DLmI68AIHHAbIgK7LePc52e-VbgJg")
           if [ "$response" != 'passed' ]; then
               printf "Embold Quality gate ${RED}FAILED${NC}\n"
               exit 1
