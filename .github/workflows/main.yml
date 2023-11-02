@@ -21,11 +21,24 @@ jobs:
       - name: Run Embold Scan
         run: |
           ./embold-scanner/bin/embold-scanner analyse \
-            -u https://a9b7-54-93-64-58.ngrok.io \
-            -t eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTY5ODg0MDYwMTg0MSwiaWF0IjoxNjk4ODQwNjAxfQ.FEipAG1_Snfxe5jnkqf6SzJ3sM_Dm58rvniL2cJPZuikOiWrhybDGQrJx13P5LUGnRLt2NQious7NLP-lTkBWg \
-            -r 0063ff6c94ee04371ad3b84ceac6ef53 \
+            -u https://ng.emboldci.dev \
+            -t eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTY5ODkxMjY2MjYyOSwiaWF0IjoxNjk4OTEyNjYyfQ.6VfL5l5DhsRFyBJiVyJvnBmPh60W50Oti-AL6OubD1MMg3sOJSDqEpsz3DLmI68AIHHAbIgK7LePc52e-VbgJg \
+            -r d46fc849e68e557b2e2c557126f04a81 \
             -b $PWD \
             -d $PWD/embold-data \
             -c ./repository-configuration.json \
             -l ./embold-log \
             -sh ./embold-scanner-home
+
+      - name: Check Embold Quality Gate
+        run: |
+          RED='\033[0;31m'
+          GREEN='\033[0;32m'
+          NC='\033[0m' # No Color
+
+          response=$(curl --silent --location --request GET "https://ng.emboldci.dev/api/v1/repositories/d46fc849e68e557b2e2c557126f04a81/qualitygateprofiles/status" --header "Authorization:Bearer eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTY5ODkxMjY2MjYyOSwiaWF0IjoxNjk4OTEyNjYyfQ.6VfL5l5DhsRFyBJiVyJvnBmPh60W50Oti-AL6OubD1MMg3sOJSDqEpsz3DLmI68AIHHAbIgK7LePc52e-VbgJg")
+          if [ "$response" != 'passed' ]; then
+              printf "Embold Quality gate ${RED}FAILED${NC}\n"
+              exit 1
+          fi
+          printf "Embold Quality gate ${GREEN}PASSED${NC}\n"
