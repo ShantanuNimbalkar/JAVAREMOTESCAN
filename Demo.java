@@ -1,7 +1,7 @@
 package javacodechecker;
 
 public class Demo {
-    public void bad() throws Throwable
+    public void bad() throws Exception
     {
         // EMB-ISSUE: CodeIssueNames.RETURN_IN_FINALLY_BLOCK
         try
@@ -58,6 +58,8 @@ public class Demo {
         catch(IllegalArgumentException exceptIllegalArgument)
         {
             IO.writeLine("preventing incidental issues");
+        }catch(Exception exception){
+            
         }
         finally
         {
