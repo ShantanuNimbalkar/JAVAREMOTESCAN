@@ -1,0 +1,3 @@
+[submodule "/Users/shantanu/github/MyRepos/JAVAREMOTESCAN/sshDemo"]
+	path = /Users/shantanu/github/MyRepos/JAVAREMOTESCAN/sshDemo
+	url = git@github.com:ShantanuNimbalkar/SshDemo.git
